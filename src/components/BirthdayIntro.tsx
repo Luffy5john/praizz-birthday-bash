@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import heroBackground from "@/assets/birthday-hero-bg.jpg";
-import { useRef } from "react";
 
 interface BirthdayIntroProps {
   friendName: string;
@@ -8,16 +7,8 @@ interface BirthdayIntroProps {
 }
 
 const BirthdayIntro = ({ friendName, onStart }: BirthdayIntroProps) => {
-  const audioRef = useRef<HTMLAudioElement>(null);
-
   const handleStart = () => {
-    // Start background music
-    if (audioRef.current) {
-      audioRef.current.volume = 0.4; // Set to comfortable background level
-      audioRef.current.play().catch(e => {
-        console.log("Auto-play prevented, music will start after user interaction");
-      });
-    }
+    // YouTube iframe will autoplay automatically
     onStart();
   };
 
@@ -46,14 +37,17 @@ const BirthdayIntro = ({ friendName, onStart }: BirthdayIntroProps) => {
           Start the celebration
         </Button>
         
-        {/* Background Music */}
-        <audio
-          ref={audioRef}
-          loop
-          preload="auto"
-        >
-          <source src="https://cdn.pixabay.com/download/audio/2023/10/12/audio_2ce7e8a5b3.mp3?filename=soft-piano-ambient-174482.mp3" type="audio/mpeg" />
-        </audio>
+        {/* Background Music - YouTube Embed */}
+        <iframe
+          width="0"
+          height="0"
+          src="https://www.youtube.com/embed/QaR31V5xBQ8?autoplay=1&loop=1&playlist=QaR31V5xBQ8&controls=0"
+          title="Background Music"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          style={{ display: 'none' }}
+        />
       </div>
     </section>
   );
