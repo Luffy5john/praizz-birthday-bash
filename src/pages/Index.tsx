@@ -3,7 +3,7 @@ import BirthdayIntro from "@/components/BirthdayIntro";
 import MemoryLane from "@/components/MemoryLane";
 import BirthdayPoem from "@/components/BirthdayPoem";
 import WishWall from "@/components/WishWall";
-import MusicPlayer from "@/components/MusicPlayer";
+
 import BirthdayFinale from "@/components/BirthdayFinale";
 
 const Index = () => {
@@ -38,7 +38,6 @@ const Index = () => {
       <main className="container mx-auto px-4 py-8 space-y-12">
         <MemoryLane />
         <BirthdayPoem friendName={friendName} />
-        <MusicPlayer />
         <WishWall />
         <BirthdayFinale friendName={friendName} />
       </main>
