@@ -1,30 +1,45 @@
 import { Card } from "@/components/ui/card";
-import groupSelfie from "@/assets/group-selfie.jpg";
-import childhoodMemory from "@/assets/childhood-memory.jpg";
-import friendPortrait from "@/assets/friend-portrait.jpg";
-import outdoorAdventure from "@/assets/outdoor-adventure.jpg";
-import dogFilterSelfie from "@/assets/dog-filter-selfie.jpg";
 
 const memories = [
   { 
-    src: groupSelfie, 
-    caption: "The squad that never fails to make me laugh" 
+    src: "/lovable-uploads/e192eb2e-70ae-4382-96e7-aa1808a5ba47.png", 
+    caption: "Squad goals with heart filters! 💕" 
   },
   { 
-    src: childhoodMemory, 
-    caption: "Precious childhood memories that last forever" 
+    src: "/lovable-uploads/ed714416-b0ee-4643-b9ac-066e76e33a7d.png", 
+    caption: "Evening adventures with the crew" 
   },
   { 
-    src: friendPortrait, 
-    caption: "Gorgeous friend with amazing style" 
+    src: "/lovable-uploads/bb8da2c3-7c52-4e30-9d20-ad652bf7edb6.png", 
+    caption: "Academic life memories - thumbs up! 👍" 
   },
   { 
-    src: outdoorAdventure, 
-    caption: "Adventures in the great outdoors together" 
+    src: "/lovable-uploads/b48d8839-1aef-417b-9574-19d41e3ca3ec.png", 
+    caption: "Beautiful face paint and traditional vibes" 
   },
   { 
-    src: dogFilterSelfie, 
-    caption: "More dog filter fun 😄" 
+    src: "/lovable-uploads/5dc47ef4-b8b0-483a-bae9-4a5d065c050d.png", 
+    caption: "Nature adventures with the best company" 
+  },
+  { 
+    src: "/lovable-uploads/acd1eff1-d4db-4d52-b07a-5f1da0a9c443.png", 
+    caption: "Puppy filter cuteness overload! 🐶" 
+  },
+  { 
+    src: "/lovable-uploads/f8badc97-d07b-4e32-9276-5f547aea5773.png", 
+    caption: "More puppy filter fun with bestie!" 
+  },
+  { 
+    src: "/lovable-uploads/edaacc49-80b4-4f89-8684-070b0fcc9957.png", 
+    caption: "Heart filter magic ✨" 
+  },
+  { 
+    src: "/lovable-uploads/0a1f06b9-fbaf-4542-8461-0f8544060613.png", 
+    caption: "Selfie masters with heart filters 💖" 
+  },
+  { 
+    src: "/lovable-uploads/f840836b-49bd-4694-81fe-b48efb122dec.png", 
+    caption: "Peaceful moments and sweet dreams" 
   }
 ];
 
